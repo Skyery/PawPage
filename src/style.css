@@ -1,0 +1,372 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+html, body{
+    min-width: 1440px;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.wrap{
+    width: 100%;
+}
+
+/* 
+    universal 
+*/
+.btn{
+    width: 250px;
+    padding: 10px 0;
+    font-weight: 300;
+    font-size: 24px;
+    text-align: center;
+    border-radius: 36px;
+    transition: .2s;
+}
+
+/* 
+    header 
+*/
+header{
+    height: 720px;
+    background: url('../img/bg.png') no-repeat center center /cover;
+    display: flex;
+    justify-content: space-between;
+}
+header .left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 4rem 0 4rem 8rem;
+}
+header .left p{
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo a{
+    color: #fff;
+    font-weight: 400;
+    font-size: 24px;
+    margin-left: 20px;
+    text-transform: uppercase;
+}
+header .right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 6rem 8rem 6rem 0;
+}
+header .right nav{
+    display: flex;
+    flex-direction: row;
+}
+header .right nav li:not(:last-child){
+    margin-right: 30px;
+}
+header .right nav li a{
+    color:#fff;
+    font-weight: 300;
+    font-size: 24px;
+}
+header .right h2{
+    color: #fff;
+    font-weight: 700;
+    font-size: 48px;
+}
+.header-btn{
+    color: #545871;
+    background: #fff;
+}
+.header-btn:hover{
+    color: #fff;
+    background: #545871;
+}
+
+/* 
+    about us
+*/
+.about{
+    height: 720px;
+    display: flex;
+    justify-content: space-between;
+ }
+.about .left{
+    width: 720px;
+    padding: 6rem 2rem 6rem 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.about .left h4{
+    color: #545871;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.about .left p{
+    color: #545871;
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+.section-btn{
+    color: #fff;
+    background: #545871;
+}
+.section-btn:hover{
+    background: #424558;
+}
+.about .right{
+    width: 720px;
+    padding: 6rem 8rem 6rem 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: end;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+.about .right img{
+    vertical-align: middle;
+}
+.about .about-img{
+    position: relative;
+}
+.about .about-img p{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+/* 
+    services
+*/
+.services{
+    height: 720px;
+    display: flex;
+    background: #F7ECEB;
+}
+.services .left{
+    position: relative;
+    flex: 1;
+    background: url('../img/section2-bg.png') no-repeat center center / cover;
+}
+.services .left p{
+    position: absolute;
+    bottom: 4rem;
+    left: 8rem;
+    color:#fff;
+    font-size: 16px;
+    font-weight: 400;
+}
+.services .right{
+    flex: 1;
+}
+.services .right .content{
+    height: 100%;
+    padding: 6rem 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.services .right .content h4{
+    color: #545871;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.services .right .content p{
+    color: #545871;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+/* 
+    reviews
+*/
+.reviews{
+    height: 970px;
+    background: #545871;
+    padding: 6rem 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.reviews h2{
+    font-size: 48px;
+    font-weight: 700;
+    color: #fff;
+}
+.reviews a{
+    color: #545871;
+    background: #EBD0CE;
+}
+.reviews a:hover{
+    background: rgb(200, 177, 175);
+}
+.reviews .items{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-column-gap: 40px;
+    grid-row-gap: 30px;
+    justify-content: center;
+}
+.reviews .items .card{
+    background: #fff;
+    border-radius: 12px;
+    display: flex;
+    padding: 30px;
+}
+.reviews .items .card img{
+    width: 250px;
+    vertical-align: middle;
+}
+.card-txt h4{
+    font-size: 24px;
+    font-weight: 700;
+    color: #545871;
+    padding: 0 0 30px 30px;
+}
+.card-txt p{
+    font-size: 20px;
+    font-weight: 300;
+    padding: 0 0 30px 30px;
+    position: relative;
+}
+.card-txt p::before{
+    content: '"';
+    position: absolute;
+    top: 0;
+    left: 20px;
+}
+
+/* 
+    affordable option
+*/
+.affoption{
+    height: 970px;
+    padding: 2rem 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.affoption h2{
+    font-size: 48px;
+    font-weight: 700;
+    color: #545871;
+}
+.affoption p{
+    font-size: 24px;
+    font-weight: 300;
+    color: #545871;
+}
+.affoption .items{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+}
+.affoption .card{
+    position: relative;
+    width: 350px;
+    height: 400px;
+    border: 1px solid #DADBE6;
+    border-radius: 12px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.affoption .card:not(:last-child){
+    margin-right: 50px;
+}
+.affoption .card .icon{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1px solid #E6DBDA;
+    border-radius: 50%;
+    background: #F7ECEB;
+    z-index: 2;
+}
+.affoption .card .icon img{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    vertical-align: middle;
+}
+.affoption .card > h4{
+    font-size: 36px;
+    font-weight: 700;
+    color: #545871;
+    margin-top: 60px;
+}
+.affoption .card > p{
+    font-size: 20px;
+    font-weight: 300;
+    color: #545871;
+    text-align: center;
+    padding: 0 50px;
+}
+.affoption .card .price{
+    width: 100%;
+    background: #F0F1F7;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 15px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+.affoption .card .price h4{
+    font-size: 48px;
+    font-weight: 700;
+    color: #545871;
+}
+.affoption .card .price p{
+    font-size: 12px;
+    font-weight: 700;
+    color: #545871;
+}
+
+/* 
+    contact
+*/
+.contact{
+    height: 500px;
+    background: #F7ECEB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 6rem 8rem;
+}
+.contact h2,
+.contact p,
+.contact a{
+    font-size: 48px;
+    font-weight: 700;
+    color: #545871;
+}
+.contact a{
+    text-decoration: underline;
+}
